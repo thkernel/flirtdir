@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Hobby Profiles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Hobby</th>
+      <th>Status</th>
+      <th>Profile</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hobby_profiles.each do |hobby_profile| %>
+      <tr>
+        <td><%= hobby_profile.hobby %></td>
+        <td><%= hobby_profile.status %></td>
+        <td><%= hobby_profile.profile %></td>
+        <td><%= link_to 'Show', hobby_profile %></td>
+        <td><%= link_to 'Edit', edit_hobby_profile_path(hobby_profile) %></td>
+        <td><%= link_to 'Destroy', hobby_profile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Hobby Profile', new_hobby_profile_path %>

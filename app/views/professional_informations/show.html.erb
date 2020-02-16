@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Profession:</strong>
+  <%= @professional_information.profession %>
+</p>
+
+<p>
+  <strong>Activity area:</strong>
+  <%= @professional_information.activity_area %>
+</p>
+
+<p>
+  <strong>Education:</strong>
+  <%= @professional_information.education %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @professional_information.status %>
+</p>
+
+<p>
+  <strong>Profile:</strong>
+  <%= @professional_information.profile %>
+</p>
+
+<%= link_to 'Edit', edit_professional_information_path(@professional_information) %> |
+<%= link_to 'Back', professional_informations_path %>

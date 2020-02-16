@@ -1,0 +1,2 @@
+module HobbyProfilesHelper
+end

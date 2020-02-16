@@ -1,0 +1,42 @@
+<%= form_with(model: professional_information, local: true) do |form| %>
+  <% if professional_information.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(professional_information.errors.count, "error") %> prohibited this professional_information from being saved:</h2>
+
+      <ul>
+      <% professional_information.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :profession %>
+    <%= form.text_field :profession %>
+  </div>
+
+  <div class="field">
+    <%= form.label :activity_area %>
+    <%= form.text_field :activity_area %>
+  </div>
+
+  <div class="field">
+    <%= form.label :education %>
+    <%= form.text_field :education %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.text_field :status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :profile_id %>
+    <%= form.text_field :profile_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

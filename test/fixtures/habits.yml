@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tobacco: MyString
+  alcohol: MyString
+  drugs: MyString
+  status: MyString
+  profile: one
+
+two:
+  tobacco: MyString
+  alcohol: MyString
+  drugs: MyString
+  status: MyString
+  profile: two

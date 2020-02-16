@@ -1,0 +1,42 @@
+<%= form_with(model: habit, local: true) do |form| %>
+  <% if habit.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(habit.errors.count, "error") %> prohibited this habit from being saved:</h2>
+
+      <ul>
+      <% habit.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :tobacco %>
+    <%= form.text_field :tobacco %>
+  </div>
+
+  <div class="field">
+    <%= form.label :alcohol %>
+    <%= form.text_field :alcohol %>
+  </div>
+
+  <div class="field">
+    <%= form.label :drugs %>
+    <%= form.text_field :drugs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.text_field :status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :profile_id %>
+    <%= form.text_field :profile_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

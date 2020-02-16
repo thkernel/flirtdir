@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hobby: one
+  status: MyString
+  profile: one
+
+two:
+  hobby: two
+  status: MyString
+  profile: two
