@@ -143,7 +143,7 @@ gem 'whenever', '~> 0.10.0', require: false
 # Remotipart is a Ruby on Rails gem enabling remote multipart forms
 gem 'remotipart', '~> 1.4', '>= 1.4.2'
 
-gem 'rubyzip', '~> 1.2.2'
+gem 'rubyzip', '~> 1.3.0'
 gem 'cookies_eu', '~> 1.7', '>= 1.7.5'
 
 
